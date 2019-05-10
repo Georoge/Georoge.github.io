@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Georoge&#39;s Blogs">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Georoge&#39;s Blogs">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Georoge&#39;s Blogs">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Georoge's Blogs</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Georoge's Blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/JS-常用字符串处理方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Georoge">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Georoge's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/30/JS-常用字符串处理方法/" class="post-title-link" itemprop="url">JS-常用字符串处理方法</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-30 10:29:43" itemprop="dateCreated datePublished" datetime="2019-04-30T10:29:43+08:00">2019-04-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-10 09:51:58" itemprop="dateModified" datetime="2019-05-10T09:51:58+08:00">2019-05-10</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="一、-JS-内置函数"><a href="#一、-JS-内置函数" class="headerlink" title="一、 JS 内置函数"></a>一、 JS 内置函数</h3><h4 id="1-string-concat-str"><a href="#1-string-concat-str" class="headerlink" title="1. string.concat(str)"></a>1. string.concat(str)</h4><p><strong>说明：</strong>将两个或多个字符串连接起来，返回一个新的字符串（不会改变原有字符串）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">str</td>
+<td>被拼接在后面的字符串</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">"hello "</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="string">"world!"</span>;</span><br><span class="line"><span class="keyword">var</span> c = a.concat(b);</span><br><span class="line"><span class="built_in">console</span>.log(c);  <span class="comment">//"hello world!"</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-string-indexOf-searchValue-startIndex"><a href="#2-string-indexOf-searchValue-startIndex" class="headerlink" title="2. string.indexOf(searchValue,startIndex)"></a>2. string.indexOf(searchValue,startIndex)</h4><p><strong>说明：</strong>返回字符串中一个 子串 <strong>第一次出现</strong>的索引(从左到右,从0开始)；如果没有匹配项，返回 “-1”</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">searchValue</td>
+<td>必需，要检索的字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">startIndex</td>
+<td>可选项，开始检索的位置；合法值为 0 到 string.length-1</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">"Hello world!"</span>;</span><br><span class="line"><span class="keyword">var</span> index = a.indexOf(<span class="string">'l'</span>,<span class="number">3</span>);   <span class="comment">//从索引 3 开始，查找字符串"l"首次出现的位置 结果是 3</span></span><br><span class="line"><span class="keyword">var</span> index1 = a.indexOf(<span class="string">'l'</span>);  <span class="comment">//查找字符串"l" 首次出现的位置  结果是 2</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-string-lastIndexOf-searchValue-startIndex"><a href="#3-string-lastIndexOf-searchValue-startIndex" class="headerlink" title="3. string.lastIndexOf(searchValue,startIndex)"></a>3. string.lastIndexOf(searchValue,startIndex)</h4><p><strong>说明：</strong>返回字符串中一个 子串 <strong>最后一次出现</strong>的索引(从右到左,从0开始)；如果没有匹配项，返回 “-1”</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">searchValue</td>
+<td>必需，要检索的字符串</td>
+</tr>
+<tr>
+<td style="text-align:left">startIndex</td>
+<td>可选项，开始检索的位置；合法值为 0 到 string.length-1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-string-charAt-index"><a href="#4-string-charAt-index" class="headerlink" title="4.string. charAt(index)"></a>4.string. charAt(index)</h4><p><strong>说明：</strong>返回指定位置的字符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">"Hello world!"</span>;</span><br><span class="line"><span class="keyword">var</span> code = a.charAt(<span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(code);  <span class="comment">//结果是 e</span></span><br></pre></td></tr></table></figure>
+<h4 id="5-string-substring-start-stop"><a href="#5-string-substring-start-stop" class="headerlink" title="5. string.substring(start,stop)"></a>5. string.substring(start,stop)</h4><p><strong>说明：</strong>返回string中 <em>start</em> 到 <em>stop- 1</em> 之间的所有字符；返回值长度为 <em>stop</em>- start；</p>
+<p><strong>注意：</strong>如果参数 <em>start</em> 与 <em>stop</em> 相等，那么该方法返回的就是一个空串（即长度为 0 的字符串）。如果 <em>start</em> 比 <em>stop</em> 大，那么该方法在提取子串之前会先交换这两个参数。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">start</td>
+<td>必需，非负整数，规定要提取的字符串的开始位置</td>
+</tr>
+<tr>
+<td style="text-align:left">stop</td>
+<td>可选项，非负整数，规定要提取的字符串的结束位置(实际比需要的位置多1)；若省略该参数，提取的字符串为start 到字符串结尾</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">"Hello world!"</span>;</span><br><span class="line"><span class="keyword">var</span> newStr = str.substring();</span><br></pre></td></tr></table></figure>
+<h4 id="6-string-substr-start-length"><a href="#6-string-substr-start-length" class="headerlink" title="6. string.substr(start,length)"></a>6. string.substr(start,length)</h4><p><strong>说明：</strong>提取从 start 下标开始的指定长度的字符</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start</td>
+<td>必需，提取字符串的开始下标</td>
+</tr>
+<tr>
+<td>length</td>
+<td>可选项，提取的字符串长度；若省略该参数，提取的字符串为 start 到字符串结尾</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    
+
+    <div>
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/JS-常用函数封装/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Georoge">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Georoge's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/30/JS-常用函数封装/" class="post-title-link" itemprop="url">JS-常用函数</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-30 09:40:51" itemprop="dateCreated datePublished" datetime="2019-04-30T09:40:51+08:00">2019-04-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-10 09:50:09" itemprop="dateModified" datetime="2019-05-10T09:50:09+08:00">2019-05-10</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="一、字符串相关"><a href="#一、字符串相关" class="headerlink" title="一、字符串相关"></a>一、字符串相关</h2><h3 id="1-字符串数组去重"><a href="#1-字符串数组去重" class="headerlink" title="1. 字符串数组去重"></a>1. 字符串数组去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">removal</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr.indexOf(arr[i]) != i)&#123;</span><br><span class="line">            arr.splice(i,<span class="number">1</span>);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-判断一个字符串是否在一个数组中"><a href="#2-判断一个字符串是否在一个数组中" class="headerlink" title="2. 判断一个字符串是否在一个数组中"></a>2. 判断一个字符串是否在一个数组中</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isInArray</span>(<span class="params">str,strArray</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;strArray.length;i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> thisStr = strArray[i].toString();</span><br><span class="line">        <span class="keyword">if</span>(thisStr == str)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-返回特定字符串在数组中的位置-下标"><a href="#3-返回特定字符串在数组中的位置-下标" class="headerlink" title="3. 返回特定字符串在数组中的位置(下标)"></a>3. 返回特定字符串在数组中的位置(下标)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getIndex</span>(<span class="params">str,strArray</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;strArray.length;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(str == strArray[i]) <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-返回一个字符在字符串中第N次出现的位置"><a href="#4-返回一个字符在字符串中第N次出现的位置" class="headerlink" title="4. 返回一个字符在字符串中第N次出现的位置"></a>4. 返回一个字符在字符串中第N次出现的位置</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">findIndex</span>(<span class="params">char,string,num</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> x = string.indexOf(char);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;num;i++)&#123;</span><br><span class="line">        x = string.indexOf(char,x+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a>二、其他</h2><h3 id="1-打开子窗口"><a href="#1-打开子窗口" class="headerlink" title="1. 打开子窗口"></a>1. 打开子窗口</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openDialog</span>(<span class="params">url,params,width,height</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//因为浏览器打开的窗口表现形式不是完全一样的，所以先判断浏览器类型</span></span><br><span class="line">    <span class="keyword">var</span> is_opera = <span class="regexp">/opera/i</span>.test(navigator.userAgent);</span><br><span class="line">    <span class="keyword">var</span> is_ie = (<span class="regexp">/msie/i</span>.test(navigator.userAgent) &amp;&amp; !is_opera);</span><br><span class="line">    <span class="keyword">var</span> is_ie_6 = (is_ie &amp;&amp; <span class="regexp">/msie 6\.0/i</span>.test(navigator.userAgent));</span><br><span class="line">    <span class="keyword">if</span>(is_ie_6)&#123;</span><br><span class="line">        height = height + <span class="number">50</span>; </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">window</span>.showModalDialog(url,params,<span class="string">"menubar:no;dialogWidth:"</span>+ width + <span class="string">"px;dialogHeight:"</span> + height +<span class="string">"px;status:no;help:no;resizable:no;scroll:yes;location:no;toolbar:no;"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    <div>
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/29/JS--call和apply/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Georoge">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Georoge's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/29/JS--call和apply/" class="post-title-link" itemprop="url">JS常用方法(一)</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-29 19:07:17" itemprop="dateCreated datePublished" datetime="2019-04-29T19:07:17+08:00">2019-04-29</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-30 09:38:48" itemprop="dateModified" datetime="2019-04-30T09:38:48+08:00">2019-04-30</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="JS——call和apply用法"><a href="#JS——call和apply用法" class="headerlink" title="JS——call和apply用法"></a>JS——call和apply用法</h2><p><strong>JS中每个函数都包含两个非继承而来的call()和apply()方法</strong>，它们的作用是一样的</p>
+<p><strong>方法说明:</strong> 调用一个对象的一个方法，用另一个对象替换当前对象；将一个函数的对象上下文从初始的上下文改变为thisObj指定的对象；</p>
+<h3 id="1-call-thisObj-arg1-arg2…"><a href="#1-call-thisObj-arg1-arg2…" class="headerlink" title="1. call(thisObj,arg1,arg2…)"></a>1. call(thisObj,arg1,arg2…)</h3><p><strong>参数:</strong> thisObj表示 将被用作当前对象 的对象; arg1,arg2表示 传递给当前对象的参数</p>
+<p><strong>注意:</strong> 两个参数均可省略，但thisObj省略，那么Global对象将被用作thisObj；<strong>参数必须一一列举出来</strong></p>
+<p><strong>例1</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">'Tom'</span>;</span><br><span class="line">    <span class="keyword">this</span>.words = <span class="function"><span class="keyword">function</span>(<span class="params">words</span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'I am '</span>,words);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    func1.call(<span class="keyword">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> func3 = <span class="keyword">new</span> func2();</span><br><span class="line">func3.words(<span class="string">'George'</span>);   <span class="comment">// I am George</span></span><br><span class="line"><span class="built_in">console</span>.log(func3.name);  <span class="comment">// Tom</span></span><br></pre></td></tr></table></figure>
+<p>以上代码，func2中func1调用了call方法，等于是在func2中执行了func1()；此时func2继承了func1的属性和方法。</p>
+<p><strong>例2</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Pet = &#123;</span><br><span class="line">	words: <span class="string">"......"</span>,</span><br><span class="line">	speak:<span class="function"><span class="keyword">function</span>(<span class="params">say</span>)</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(say + <span class="string">" "</span> + <span class="keyword">this</span>.words);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">Pet.speak(<span class="string">'Speak'</span>);  <span class="comment">// Speak ......</span></span><br><span class="line"><span class="keyword">var</span> Dog = &#123;</span><br><span class="line">    words:<span class="string">"Wang"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用call时，this指向了Dog</span></span><br><span class="line">Pet.speak.call(Dog,<span class="string">"Speak"</span>) <span class="comment">// Speak Wang</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-apply-thisObj-argArray"><a href="#2-apply-thisObj-argArray" class="headerlink" title="2. apply(thisObj,[argArray])"></a>2. apply(thisObj,[argArray])</h3><p><strong>参数:</strong> thisObj表示 将被用作当前对象 的对象; argArray表示 传递给当前对象的参数</p>
+<p><strong>注意:</strong> 两个参数均可省略，但thisObj省略，那么Global对象将被用作thisObj；<strong>参数必须是数组形式的</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.name=name;</span><br><span class="line">	<span class="keyword">this</span>.age=age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*定义一个学生类*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Student</span>(<span class="params">name,age,grade</span>)</span>&#123;</span><br><span class="line">	Person.apply(<span class="keyword">this</span>,<span class="built_in">arguments</span>);</span><br><span class="line">	<span class="keyword">this</span>.grade=grade;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建一个学生类</span></span><br><span class="line"><span class="keyword">var</span> student=<span class="keyword">new</span> Student(<span class="string">"zhangsan"</span>,<span class="number">21</span>,<span class="string">"一年级"</span>);</span><br><span class="line"><span class="comment">//测试</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"name:"</span>+student.name+<span class="string">"\n"</span>+<span class="string">"age:"</span>+student.age+<span class="string">"\n"</span>+<span class="string">"grade:"</span>+student.grade);</span><br><span class="line"><span class="comment">//测试结果name:zhangsan age:21  grade:一年级</span></span><br><span class="line"><span class="comment">//Student方法里面没有给name和age属性赋值,apply使其继承了Person的属性和方法</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    <div>
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/HTML常用方法1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Georoge">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Georoge's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/22/HTML常用方法1/" class="post-title-link" itemprop="url">HTML内容（一）</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-22 11:12:14" itemprop="dateCreated datePublished" datetime="2019-04-22T11:12:14+08:00">2019-04-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-25 17:05:15" itemprop="dateModified" datetime="2019-04-25T17:05:15+08:00">2019-04-25</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="一、元素"><a href="#一、元素" class="headerlink" title="一、元素"></a>一、元素</h1><h2 id="1-行内元素"><a href="#1-行内元素" class="headerlink" title="1. 行内元素"></a>1. 行内元素</h2><p><strong>特性：</strong></p>
+<p>1）在一行内可以有多个行内元素</p>
+<p>2）设置宽度width无效；设置高度无效，可以通过设置line-height来设置；设置margin只有左右有效，上下无效；设置padding只有左右有效，上下无效</p>
+<p>3）只能包含行内元素</p>
+<p>4）遇到父级元素边界会自动换行</p>
+<p> <strong>常用行内元素：</strong>span、img、a、input、textarea、select、strong、lable、button、abbr（缩写）、em（强调）、cite（参考文献引用）、i（斜体）、q（引号）、small、big、sup（上标）、sub、u（下划线）等</p>
+<p> <strong>特殊的行内元素：</strong>input、img、textarea、select、button、label。这些行内元素又被称为置换元素，它们默认地设置了宽高，性质等同于设置了 display:inline-block</p>
+<p><strong>置换元素：</strong>（浏览器根据元素的标签和属性，来决定元素的具体显示内容），置换元素在其显示中生成了框，故可以设置width、height、padding、margin，表现等同于设置了 display:inline-block</p>
+<p><strong>行内元素的间距：</strong>相邻的两个行内元素之间会有间距</p>
+<p><strong>去除行内元素之间的间距有以下两种办法：</strong></p>
+<p>1）重设字体。将行内元素的直接父级设置font-size:0px；再给行内元素设置字体大小即可解决</p>
+<p>2）借助HTML注释。在两个行内元素之间加入注释</p>
+<h2 id="2-块元素"><a href="#2-块元素" class="headerlink" title="2. 块元素"></a>2. 块元素</h2><p><strong>特性：</strong></p>
+<p>1）独占一行；</p>
+<p>2）可以设置宽、高；不设置宽度时默认为100%；</p>
+<p>3）块元素可以包含行内元素和块元素</p>
+<p> <strong>常用块元素：</strong>div、p、h1~h6、ul、ol、dl、li、dd、table、hr、blockquote、address、table、menu、pre，HTML5新增的header、section、aside、footer等</p>
+<h2 id="3-行内块元素"><a href="#3-行内块元素" class="headerlink" title="3. 行内块元素"></a>3. 行内块元素</h2><p><strong>特性：</strong></p>
+<p>1）元素排列在一行</p>
+<p>2）宽度默认由内容决定</p>
+<p>3）元素间默认有间距</p>
+<p>4）支持宽高、外边距、内边距的所有样式的设置</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    <div>
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/head.jpg" alt="Georoge">
+            
+              <p class="site-author-name" itemprop="name">Georoge</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/Georoge" title="GitHub &rarr; https://github.com/Georoge" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:1634504036@qq.com" title="E-Mail &rarr; mailto:1634504036@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.wink-zone.cn" title="http://www.wink-zone.cn" rel="noopener" target="_blank">沈阅</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.cnblogs.com/givingwu/p/6838201.html" title="https://www.cnblogs.com/givingwu/p/6838201.html" rel="noopener" target="_blank">FCC前端基础算法</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Georoge</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
